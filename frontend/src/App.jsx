@@ -1154,16 +1154,6 @@ function App() {
 
         <div className="sidebar-bottom">
 
-          <div className="sidebar-note">
-
-            <span className="note-icon"><Wrench size={17} /></span>
-
-            <div><strong>Fleetari's Garage</strong><span>Fleet operations</span></div>
-
-          </div>
-
-          <p className="sidebar-version">FLEETARI'S · ORACLE DATABASE</p>
-
         </div>
 
       </aside>
@@ -1172,15 +1162,7 @@ function App() {
 
       <main className="main-area">
 
-        <header className="topbar">
-
-          <button className="mobile-menu" aria-label="Open navigation" onClick={() => setMobileOpen(true)}><Menu size={21} /></button>
-
-          <div className="breadcrumbs"><span>Fleetari's</span><span className="breadcrumb-divider">/</span><strong>{active}</strong></div>
-
-          <div className="topbar-right"><span className="environment-label">ORACLE CONNECTED</span></div>
-
-        </header>
+        
 
 
 
@@ -1196,15 +1178,15 @@ function App() {
 
                 {active === "Overview"
 
-                  ? "A clear view of your fleet and vehicle status."
+                  ? ""
 
                   : active === "Vehicles"
 
-                    ? "Manage registrations, specifications and status."
+                    ? ""
 
                     : active === "Companies"
 
-                      ? "Manage company details and their fleet associations."
+                      ? ""
 
                       : `Manage your fleet's ${active.toLowerCase()} records.`}
 
@@ -1464,7 +1446,6 @@ function App() {
 
 
 
-          <footer className="page-footer"><span>Fleetari's <span className="footer-separator">/</span> Fleet Management</span><span>Oracle Database</span></footer>
 
         </div>
 
